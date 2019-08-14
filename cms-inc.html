@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/cms-inc.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Admin cPanel Theme</title>
+</head>
+
+<body class="blue-grey lighten-3 ">
+  <nav class="blue-grey z-depth-5">
+    <div class="container ">
+      <div class="nav-wrapper">
+        <a href="cms-inc.html" class="brand-logo left">cPanel</a>
+        <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active hoverable">
+            <a href="cms-inc.html">Dashboard</a>
+          </li>
+          <li>
+            <a class="hoverable" href="posts.html">Posts</a>
+          </li>
+          <li>
+            <a  class="hoverable" href="categories.html">Categories</a>
+          </li>
+          <li>
+            <a class="hoverable" href="comments.html">Comments</a>
+          </li>
+          <li>
+            <a class="hoverable" href="users.html">Users</a>
+          </li>
+        </ul>
+         <!-- Dropdown Trigger -->
+      <ul><a class="dropdown-button show-on-large right hoverable" href="#!" data-activates="dropdown1">Favorties<i class="material-icons right">arrow_drop_down</i></a></ul>
+      <!-- Dropdown Structure -->
+    <button id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Link</a></li>
+        <li><a href="#!">Link</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Link</a></li>
+      </button>
+
+
+        <!-- Side nav -->
+        
+        <ul id="side-nav" class="side-nav z-depth-5">
+          <li>
+            <div class="user-view">
+              <div class="background blue-grey ">
+              </div>
+              <a href="#">
+                <img src="img/person2.jpg" alt="" class="circle">
+              </a>
+              <a href="#">
+                <span class="name white-text">Chase Singhofen</span>
+              </a>
+              <a href="#">
+                <span class="email white-text">cs@gmail.com</span>
+              </a>
+            </div>
+           
+          </li>
+          
+          <li>
+            <a href="cms-inc.html">
+              <i class="material-icons">dashboard</i> Dashboard</a>
+          </li>
+
+           <!-- Dropdown Trigger #2 -->
+      <ul><a class="dropdown-button2 show-on-large left black-text btn" href="#!" data-activates="dropdown2"> Menu<i class="material-icons right black-text ">arrow_drop_down</i></a></ul>
+      <!-- Dropdown Structure #2 -->
+       <button id="dropdown2" class="dropdown-content">
+        <li><a href="#!">Link 1</a></li>
+        <li><a href="#!">Link 2</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Link 3</a></li>
+      </button><br>
+          <li>
+            <a href="posts.html">Posts</a>
+          </li>
+          <li>
+            <a href="categories.html">Categories</a>
+          </li>
+          <li>
+            <a href="comments.html">Comments</a>
+          </li>
+          <li>
+            <a href="users.html">Users</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Account Controls</a>
+          </li>
+          
+          
+           <!-- Dropdown Trigger #3 --> 
+      <ul><a class="dropdown-button3 show-on-large left black-text btn" href="#!" data-activates="dropdown3"> Menu<i class="material-icons right black-text ">arrow_drop_down</i></a></ul>   
+            <!-- Dropdown Structure #3 -->  
+       <button id="dropdown3" class="dropdown-content">
+        <li><a href="#!">Link 1</a></li>
+        <li><a href="#!">Link 2</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Link 3</a></li>
+      </button><br>
+      <li>
+          <a href="login.html" class="waves-effect">Logout</a>
+        </li> 
+        <br>
+    </div>
+   </nav>
+ 
+  <!-- Section: Stats -->
+
+  <section class="section section-stats center">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card-panel blue-grey lighten-3 black-text center z-depth-5 hoverable">
+          <i class="material-icons medium">insert_emoticon</i>
+          <h5>Monthly Visitors</h5>
+          <h3 class="count">98900</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate white" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel center z-depth-5 blue-grey hoverable">
+          <i class="material-icons medium">mode_edit</i>
+          <h5>Blog Posts</h5>
+          <h3 class="count">1300</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate blue-grey" style="width: 20%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel blue-grey lighten-3 black-text center z-depth-5 hoverable">
+          <i class="material-icons medium">mode_comment</i>
+          <h5>Commentary</h5>
+          <h3 class="count">19200</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate white" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel center z-depth-5 blue-grey hoverable">
+          <i class="material-icons medium">supervisor_account</i>
+          <h5>Daily Users</h5>
+          <h3 class="count">1350</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate blue-grey" style="width: 10%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <!-- collapsable #1 -->
+<div class="row">
+  <div class="col s6 hoverable">
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header hoverable"><i class="material-icons">filter_drama</i>Stats</div>
+      <div class="collapsible-body"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque ipsa aliquam..</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header hoverable"><i class="material-icons">place</i>Location</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, aspernatur!.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header hoverable"><i class="material-icons">whatshot</i>News</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></div>
+    </li>
+  </ul>
+
+  <!-- collapsable #2 -->
+  
+    </div>
+    <div class="col s6">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header hoverable"><i class="material-icons">filter_drama</i>Stats</div>
+            <div class="collapsible-body"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque ipsa aliquam..</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header hoverable"><i class="material-icons">place</i>Location</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, aspernatur!.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header hoverable"><i class="material-icons">whatshot</i>News</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></div>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Visitors -->
+  <section class="section section-visitors blue-grey lighten-3">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div class="card-panel z-depth-5 hoverable">
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <!-- Latest Comments -->
+        <ul class="collection with-header latest-comments z-depth-5 hoverable">
+          <li class="collection-header z-depth-5">
+            <h5>From Our Community</h5>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person1.jpg" alt="" class="circle">
+            <span class="title">John Doe</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+              explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
+            <a href="" class="approve green-text">Approve</a> |
+            <a href="" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person2.jpg" alt="" class="circle">
+            <span class="title">Chase Singhofen</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+              explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
+            <a href="" class="approve green-text">Approve</a> |
+            <a href="" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person3.jpg" alt="" class="circle">
+            <span class="title">Ellen Snapper</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+              explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
+            <a href="" class="approve green-text">Approve</a> |
+            <a href="" class="deny red-text">Deny</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Recent Posts & Todos -->
+  <section class="section section-recent">
+    <div class="row">
+      <div class="col s12 l8 m6">
+        <div class="card z-depth-5 hoverable">
+          <div class="card-content">
+            <span class="card-title">Recen Communityt Posts</span>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The Future Of Development</td>
+                  <td>Web Development</td>
+                  <td>
+                    <a href="details.html" class="btn blue-grey">Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>New Graphic Design Tools</td>
+                  <td>Web & Graphic Design</td>
+                  <td>
+                    <a href="details.html" class="btn blue-grey">Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Web Blogging. Is it worth it??</td>
+                  <td>Blogging & Web Development</td>
+                  <td>
+                    <a href="details.html" class="btn blue-grey">Details</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card z-depth-5 hoverable">
+          <div class="card-content hoverable">
+            <span class="card-title">My Daily Todos</span>
+            <form id="todo-form">
+              <div class="input-field hoverable">
+                <input id="todo" type="text" placeholder="Add Todo...">
+              </div>
+            </form>
+            <ul class="collection todos">
+              <li class="collection-item">
+                <div>Finish Blog Post about Development & Design
+                  <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Modify Images in January Blog post w/ Photoshop
+                  <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- Footer -->
+  <footer class="section blue-grey white-text center">
+    <p>CMS Inc. Copyright &copy; 2004-2018 MIT</p>
+
+    </footer>
+
+  <!-- Fixed Action Button -->
+  <div class="fixed-action-btn ">
+    <a class="btn-floating btn-large red z-depth-5 pulse">
+      <i class="material-icons">add</i>
+    </a>
+    <ul>
+      <li>
+        <a href="#post-modal" class="modal-trigger btn-floating blue-grey">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </li>
+      <li>
+        <a href="#category-modal" class="modal-trigger btn-floating blue-grey">
+          <i class="material-icons">folder</i>
+        </a>
+      </li>
+      <li>
+        <a href="#user-modal" class="modal-trigger btn-floating blue-grey">
+          <i class="material-icons">supervisor_account</i>
+        </a>
+      </li>
+      
+
+    </ul>
+  </div>
+
+  <!-- Add Post Modal -->
+  <div id="post-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Post</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Select option</option>
+            <option value="1">Web Development</option>
+            <option value="2">Graphic Design</option>
+            <option value="3">Blogging wih Tech Gadgets</option>
+            <option value="4">Other</option>
+          </select>
+          <label>Category</label>
+        </div>
+        <div class="input-field">
+          <textarea name="body" id="body" class="materialize-textarea"></textarea>
+          <label for="body">Body</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn blue-grey z-depth-5 white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Category Modal -->
+  <div id="category-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Category</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title / Topics</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn blue-grey z-depth-5 white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add User Modal -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add User</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password2">
+          <label for="password2">Confirm Password</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn blue-grey z-depth-5 white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+  <script src="js/chart.js"></script>
+
+  <script>
+    // Hide Sections
+    $('.section').hide();
+
+    setTimeout(function () {
+      $(document).ready(function () {
+        // Show sections
+        $('.section').fadeIn();
+
+        //dropdown menus---must be different classes and ID's for both to work
+        $(".dropdown-button").dropdown();
+        $(".dropdown-button2").dropdown();
+        $(".dropdown-button3").dropdown();
+
+        // Hide preloader
+        $('.loader').fadeOut();
+
+        //Init Side nav
+        $('.button-collapse').sideNav();
+
+        // Init Modal
+        $('.modal').modal();
+
+        // Init Select
+        $('select').material_select();
+
+        // Counter
+        $('.count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+              duration: 1000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              }
+            });
+        });
+
+        // Comments - Approve & Deny
+        $('.approve').click(function (e) {
+          Materialize.toast('Comment Approved', 3000);
+          e.preventDefault();
+        });
+        $('.deny').click(function (e) {
+          Materialize.toast('Comment Denied', 3000);
+          e.preventDefault();
+        });
+
+        // Quick Todos
+        $('#todo-form').submit(function (e) {
+          const output = `<li class="collection-item">
+                <div>${$('#todo').val()}
+                  <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>`;
+
+          $('.todos').append(output);
+
+          Materialize.toast('Todo Added', 3000);
+
+          e.preventDefault();
+        });
+
+        // Delete Todos
+        $('.todos').on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+          Materialize.toast('Todo Removed', 3000);
+
+          e.preventDefault();
+        });
+
+        CKEDITOR.replace('body');
+
+      });
+    }, 1000);
+  </script>
+</body>
+
+</html>
